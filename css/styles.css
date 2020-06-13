@@ -97,11 +97,13 @@ ul {
 
 .link-command {
   align-items: center;
-  display: inline-flex;
-  background-color: white;
+  display: flex;
+  justify-content: center;
+
   text-decoration: none;
   width: 44px;
   height: 44px;
+  border-radius: 50%;
 }
 
 .link-card {
@@ -288,17 +290,18 @@ ul {
 }
 
 .container-command {
-  display: inline-flex;
+  display: flex;
   align-items: center;
+  justify-content: center;
+  padding: 0;
+  margin: 0;
 }
 
 .clients {
-  padding: 21px 65px;
   width: 170px;
   height: 90px;
   color: #afb1b8;
 
-  border: 1px solid #afb1b8;
   box-sizing: border-box;
   border-radius: 4px;
 
@@ -309,7 +312,6 @@ ul {
 
 .icon-hover {
   margin-left: auto;
-  padding: 21px 65px;
   width: 170px;
   height: 90px;
   color: #afb1b8;
@@ -320,6 +322,7 @@ ul {
   display: flex;
   align-items: center;
   justify-content: center;
+  fill: #afb1b8;
 }
 
 .icon-hover:focus,
@@ -356,6 +359,7 @@ ul {
   font-size: 16px;
   line-height: 1.2;
   text-align: center;
+  margin-bottom: 16px;
 }
 
 .tittle-command {
@@ -651,14 +655,21 @@ ul {
 }
 
 .icon-insta {
-  width: 20px;
-  height: 20px;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-text-color);
+  border-radius: 50%;
+}
+
+.icon-insta:hover,
+.icon-insta:focus {
+  background-color: var(--accent-color);
+  fill: white;
 }
 
 .icon-logo1 {
   height: 44.27px;
   width: 49.23px;
-  fill: #afb1b8;
 }
 
 .icon-logo1:hover,
@@ -669,29 +680,41 @@ ul {
 .icon-logo2 {
   height: 52px;
   width: 40px;
-  fill: #afb1b8;
 }
 
 .icon-logo3 {
   height: 41px;
   width: 42px;
-  fill: #afb1b8;
 }
 
 .icon-logo4 {
   height: 42px;
   width: 80px;
-  fill: #afb1b8;
 }
 
 .icon-logo5 {
   height: 47px;
   width: 59px;
-  fill: #afb1b8;
 }
 
 .icon-logo6 {
   height: 45px;
   width: 88px;
-  fill: #afb1b8;
+}
+
+.icon-fotter {
+  width: 44px;
+  height: 44px;
+  fill: white;
+  background-color: var(--primary-text-color);
+  border-radius: 50%;
+}
+
+.icon-fotter:hover,
+.icon-fotter:focus {
+  background-color: var(--accent-color);
+}
+
+.social-list li:not(:last-child) {
+  margin-right: 10px;
 }
